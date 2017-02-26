@@ -3,32 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <title>Portfolio Website</title>
-<link rel="stylesheet" type="text/css" href="./app/assets/styles/styles.css">
+<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
 
-<body> 
-	<nav>
+<body class="wrapper"> 
+	<nav class="nav">
 		<ul>
-		<li><a href="../______">contact</a></li>
-		<li><a href="../_______">work</a></li>
 		<li><a href="../______">resume</a></li>
+		<li><a href="../_______">work</a></li>
+		<li class="nav__contact"><a href="../______">contact</a></li>
 		</ul>
-	</nav>
+	</nav> 
 
-<div class="intro"
+<div class="intro">
 <h1>
 Hello! my name is Clint
 </h1>
 <p>
-I'm an illustrator and designer based in Santa Clara, CA. My work is influenced by daily life. When I'm not creating things, I can be found watching YouTube, eating, or .
+I'm an illustrator and designer. My work is influenced by what I see around me. When I'm not creating things, I can be found surfing the web, eating different food, or self-reflecting. 
 </p>
 
 
-<div class="gallery">
+<div class="gallery" "wrapper--narrow">
 <picture>
-<source srcset="____" media="min-width: ">
-<img class="gallery__image" srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains">
+<source srcset="/assets/images/hinchcliffe-hi-dpi.jpg 1024w" media="min-width: 1300px">
+<img class="gallery__image" srcset="assets/images/fedwatch-profile1.jpg 400w" alt="Tony Hinchcliffe">
+</picture>
+<picture>
+<source srcset="/assets/images/hinchcliffe-hi-dpi.jpg 1024w" media="min-width: 1300px">
+<img class="gallery__image gallery__image--animation" srcset="assets/images/nba-player-portraits.jpg 400w" alt="NBA Player Portraits">
 </picture>
 </div>
+
+<footer>
+	<p>Powered by <a href="https://www.youtube.com/watch?v=_KinUMIS3Yc" target="_blank"><span class=link>Initech</span></a></p>
 </body>
 </html>

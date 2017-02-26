@@ -1,8 +1,14 @@
-.gallery {
-	
-	&__image {
-		width: 400px;
-		height: 400px;
-		overflow: hidden;
-	}
-}
+/*don't edit app/temp/styles/styles.css directly. The editable css file is at app/assets/styles/styles.css*/
+
+@import "normalize.css"; 
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Tinos');
+
+@import "base/_variables";
+@import "base/_global"; 
+
+@import "modules/_wrapper";
+@import "modules/_gallery";
+@import "modules/_intro";
+@import "modules/_nav";
+@import "modules/_link";

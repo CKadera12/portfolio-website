@@ -1,2 +1,30 @@
-/* CSS Document */
+.gallery {
+	margin-left: auto;
+	margin-right: auto;
+	
+	&__image {
+		width: 200px; 
+		height: 200px;
+		object-fit: cover;
+		object-position: 0 0;
+		margin-right: 20px;
+		filter: grayscale(1.0) opacity(100%);
+		
+		&:hover {
+			filter: grayscale(0.0);
+		}
+		
+		&--animation {
+			animation: frames 2.2s steps(4) infinite;
+		}
+	}
+}
+
+/*animation keyframes */
+
+@keyframes frames {
+	
+	100% {object-position: 0 -800px;}
+}
+
 
