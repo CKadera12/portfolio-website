@@ -2,7 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 	background-color: $mainGrey;
-	height: 2500px;
+	height: 1500px;
 	
 	a {
 		color: black;
@@ -11,6 +11,15 @@ body {
 	
 	ul {
 		list-style-type: none;
+	}
+	
+		p {
+		font-size: 1rem;
+		margin-top: 25px;
+		font-family: "tinos", sans-serif;
+		font-weight: 300;
+		width: 500px;
+		line-height: 1.4;
 	}
 }
 

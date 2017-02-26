@@ -2,7 +2,7 @@
 
 @import "normalize.css"; 
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Tinos');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Tinos:300,500');
 
 @import "base/_variables";
 @import "base/_global"; 
