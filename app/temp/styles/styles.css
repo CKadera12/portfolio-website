@@ -372,7 +372,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 	background-color: #e6e6e6;
-	height: 1500px;
+	height: 800px;
 }
 body a {
   color: black;
@@ -488,4 +488,52 @@ body p {
 .link {
 	text-decoration: underline;
 	font-weight: 500;
+}
+.video-modal .modal {
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.video-modal .modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.video-modal .modal__inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.video-modal .modal__description {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+.video-modal .modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  cursor: pointer;
+}
+.video-modal .modal__close:hover {
+  color: #e6e6e6;
 }
