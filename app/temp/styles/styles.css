@@ -382,7 +382,7 @@ body ul {
   list-style-type: none;
 }
 body p {
-  font-size: 1rem;
+  font-size: .8rem;
   margin-top: 25px;
   font-family: "tinos", sans-serif;
   font-weight: 300;
@@ -451,21 +451,42 @@ body p {
 	100% {opacity: .1;}
 }
 .intro {
-	margin-top: 80px;
-	margin-left: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 530px){
+  .intro{
+    margin-top: 80px;
+    margin-left: 80px;
+  }
 }
 .intro h1 {
   text-transform: uppercase;
-  font-size: 1.1rem;
-  letter-spacing: .18rem;
+  font-size: .9rem;
+  letter-spacing: .15rem;
+  text-align: center;
+}
+@media (min-width: 530px){
+  .intro h1{
+    font-size: 1.1rem;
+    letter-spacing: .18rem;
+    text-align: left;
+  }
 }
 .intro p {
-  font-size: 1rem;
+  font-size: .8rem;
   margin-top: 25px;
   font-family: "tinos", sans-serif;
   font-weight: 300;
-  width: 500px;
   line-height: 1.4;
+  width: 98%;
+  text-align: center;
+}
+@media (min-width: 530px){
+  .intro p{
+    text-align: left;
+    width: 500px;
+  }
 }
 .nav {
 	margin-top: 40px;
@@ -475,12 +496,25 @@ body p {
 	height: 50px;
 	background-color: #e6e6e6; 
 	z-index: 1;
+	text-align: center;
+}
+.nav__resume {
+  display: none;
+}
+@media (min-width: 530px){
+  .nav__resume{
+    display: inline;
+  }
 }
 .nav li {
-  padding: 0 20px;
   display: inline;
-  float: right;
   line-height: 50px;
+  padding: 0 20px;
+}
+@media (min-width: 530px){
+  .nav li{
+    float: right;
+  }
 }
 .nav li:hover {
   text-decoration: underline;

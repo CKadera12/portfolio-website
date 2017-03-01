@@ -6,15 +6,28 @@
 	height: 50px;
 	background-color: $mainGrey; 
 	z-index: 1;
+	text-align: center;
+
 	
-	li {
-	padding: 0 20px;
-	display: inline;
-	float: right;
-	line-height: 50px;
+	&__resume {
+		display: none;
 		
-		&:hover {
-			text-decoration: underline;
+		@mixin atSmall {
+		display: inline;
 		}
+	}
+
+	li {
+	display: inline;
+	line-height: 50px;
+	padding: 0 20px;
+
+	@mixin atSmall {
+	float: right;
+	}
+
+	&:hover {
+	text-decoration: underline;
+	}
 	}
 }

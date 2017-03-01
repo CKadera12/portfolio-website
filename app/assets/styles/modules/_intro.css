@@ -1,18 +1,37 @@
 .intro {
+	margin-left: auto;
+	margin-right: auto;
+	
+	@mixin atSmall {
 	margin-top: 80px;
 	margin-left: 80px;
+		}
+	
 	h1 {
-	text-transform: uppercase;
-	font-size: 1.1rem;
-	letter-spacing: .18rem;
+		text-transform: uppercase;
+		font-size: .9rem;
+		letter-spacing: .15rem;
+		text-align: center;
+		
+		@mixin atSmall {
+		font-size: 1.1rem;
+		letter-spacing: .18rem;
+		text-align: left;
+		}
 	}
 	
 	p {
-		font-size: 1rem;
+		font-size: .8rem;
 		margin-top: 25px;
 		font-family: "tinos", sans-serif;
 		font-weight: 300;
-		width: 500px;
 		line-height: 1.4;
+		width: 98%;
+		text-align: center;
+		
+		@mixin atSmall {
+		text-align: left;
+		width: 500px;
+		}
 	}
 }
